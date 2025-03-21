@@ -388,6 +388,92 @@ body {
     text-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
 }
 
+/* Responsive Navigation */
+@media screen and (max-width: 1200px) {
+    .main-nav ul {
+        gap: 2rem;
+    }
+    
+    .main-nav ul li a {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main-nav ul {
+        gap: 1.5rem;
+    }
+    
+    .main-nav ul li a {
+        padding: 0.5rem 0.7rem;
+        font-size: 0.9rem;
+    }
+    
+    .main-nav ul li a i {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-nav {
+        padding: 0.8rem;
+    }
+    
+    .main-nav ul {
+        gap: 1rem;
+    }
+    
+    .main-nav ul li a {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.85rem;
+    }
+    
+    .main-nav ul li a i {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-nav {
+        padding: 0.6rem;
+    }
+    
+    .main-nav ul {
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .main-nav ul li a {
+        padding: 0.4rem 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+    .main-nav ul li a i {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main-nav {
+        padding: 0.5rem;
+    }
+    
+    .main-nav ul {
+        gap: 0.5rem;
+    }
+    
+    .main-nav ul li a {
+        padding: 0.3rem 0.4rem;
+        font-size: 0.75rem;
+    }
+    
+    .main-nav ul li a i {
+        font-size: 0.8rem;
+    }
+}
+
 /* Sections */
 .info-section {
     background: rgba(0, 0, 0, 0.95);
