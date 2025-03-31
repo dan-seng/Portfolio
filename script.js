@@ -212,4 +212,41 @@ window.addEventListener('scroll', updateTimelineGradient);
 window.addEventListener('resize', updateTimelineGradient);
 
 // Initial call
-updateTimelineGradient(); 
+updateTimelineGradient();
+
+// Scroll Progress Indicator
+window.addEventListener('scroll', () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    document.querySelector('.scroll-progress').style.setProperty('--scroll', scrolled + '%');
+});
+
+// Back to Top Button
+const backToTop = document.querySelector('.back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+    } else {
+        backToTop.classList.remove('visible');
+    }
+});
+
+// Add animation to elements when they come into view
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('scroll-visible');
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.scroll-hidden').forEach((element) => {
+    observer.observe(element);
+}); 

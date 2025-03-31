@@ -8,11 +8,19 @@
     <meta name="author" content="Daniel Gidey">
 
     <title>Dan's - Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
+        <!-- Scroll Progress Indicator -->
+        <div class="scroll-progress"></div>
+        
         <!-- Hero Section -->
         <section class="hero-section" id="home">
             <div class="hero-content">
@@ -20,11 +28,11 @@
                     <div class="hero-text">
                         <h1>Daniel Gidey</h1>
                         <p class="subtitle">Web Developer & UI/UX Designer</p>
-                        <p class="hero-description">
-                            Passionate about creating elegant solutions to complex Websites. 
-                            Specializing in modern web technologies, user-centric design, and scalable architecture.
-                            With expertise in  frontend development, I bring ideas to life through clean code and intuitive interfaces.
-                        </p>
+                        <div class="hero-description">
+                            <p class="typing-line">Passionate about creating elegant solutions to complex Websites.</p>
+                            <p class="typing-line">Specializing in modern web technologies, user-centric design, and scalable architecture.</p>
+                            <p class="typing-line">With expertise in frontend development, I bring ideas to life through clean code and intuitive interfaces.</p>
+                        </div>
                         <div class="hero-buttons">
                             <a href="#projects" class="cta-button ">View My Work</a>
                             <a href="#contact" class="cta-button secondary">Get In Touch</a>
@@ -435,7 +443,7 @@
                                 <i class="fab fa-linkedin"></i>
                                 <span>LinkedIn</span>
                             </a>
-                            <a href="https://whatsapp.com/dan-seng" class="social-button">
+                            <a href="https://wa.me/251945012123" class="social-button">
                                 <i class="fab fa-whatsapp"></i>
                                 <span>WhatsApp</span>
                             </a>
@@ -463,6 +471,11 @@
             </div>
             <p>&copy; 2025 Daniel Gidey. All rights reserved.</p>
         </footer>
+
+        <!-- Back to Top Button -->
+        <a href="#home" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
 
     <script src="script.js"></script>
