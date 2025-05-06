@@ -8,7 +8,52 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize form handling
     initFormHandling();
+
+    // Initialize photos if we're on the photos page
+    if (document.getElementById('photos-grid')) {
+        loadPhotos();
+    }
 });
+
+// Load photos dynamically
+function loadPhotos() {
+    const photosGrid = document.getElementById('photos-grid');
+    const loadingSpinner = document.getElementById('loading-spinner');
+    const totalPhotos = 80; // Total number of photos
+
+    // Show loading spinner
+    loadingSpinner.style.display = 'flex';
+
+    // Create and load all photo items
+    for (let i = 1; i <= totalPhotos; i++) {
+        const photoItem = document.createElement('div');
+        photoItem.className = 'photo-item';
+        photoItem.style.opacity = '0';
+        photoItem.style.transform = 'scale(0.9)';
+        photoItem.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+
+        const img = document.createElement('img');
+        img.src = `forweb/dani (${i}).jpg`;
+
+        // Add loading and error handling
+        img.onload = () => {
+            photoItem.style.opacity = '1';
+            photoItem.style.transform = 'scale(1)';
+        };
+
+        img.onerror = () => {
+            photoItem.remove(); // Remove the item if image fails to load
+        };
+
+        photoItem.appendChild(img);
+        photosGrid.appendChild(photoItem);
+    }
+
+    // Hide loading spinner after a short delay
+    setTimeout(() => {
+        loadingSpinner.style.display = 'none';
+    }, 1000);
+}
 
 // Scroll Animations
 function initScrollAnimations() {
