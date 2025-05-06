@@ -1879,6 +1879,25 @@ footer {
     color: #64ffda;
 }
 
+/* Loading Spinner */
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: #64ffda;
+    font-size: 2rem;
+}
+
+.loading-spinner i {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 @media screen and (max-width: 480px) {
     .hero-stats {
         grid-template-columns: 1fr;
