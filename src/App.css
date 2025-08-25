@@ -1,0 +1,176 @@
+/* Global Styles */
+.App {
+  min-height: 100vh;
+  background: #0a0a0a;
+}
+
+/* Loading Screen */
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  color: #00ff88;
+  font-family: 'Inter', sans-serif;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(0, 255, 136, 0.3);
+  border-top: 3px solid #00ff88;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-screen p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #a0a0a0;
+  letter-spacing: 0.5px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #00ff88;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #a0a0a0;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.01em;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%);
+  color: #000000;
+  box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 255, 136, 0.4);
+  background: linear-gradient(135deg, #00cc6a 0%, #00aa55 100%);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #00ff88;
+  border: 2px solid #00ff88;
+  backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+  background: rgba(0, 255, 136, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 255, 136, 0.2);
+}
+
+/* Glassmorphism Components */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 255, 136, 0.3);
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid #00ff88;
+  outline-offset: 2px;
+}
+
+/* Button focus styles */
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.3);
+}
+
+/* Input focus styles */
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}
