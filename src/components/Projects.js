@@ -59,7 +59,7 @@ const Projects = () => {
     image: '/screenshots/todo-app.png',
     technologies: ['React', 'Node.js', 'TailwindCSS', 'JS'],
     category: 'web',
-    liveUrl: 'https://todo-app.vercel.app',
+    liveUrl: 'https://task-wall.vercel.app',
     githubUrl: 'https://github.com/dan-seng/todo-list-app',
     featured: true
   },
