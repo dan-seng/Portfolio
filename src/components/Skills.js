@@ -10,15 +10,15 @@ const Skills = () => {
       description: 'Frontend and backend technologies for building modern web applications.',
       skills: [
         { name: 'React', description: 'Modern frontend framework', icon: '⚛️', level: 92 },
-        { name: 'Next.js', description: 'Full-stack React framework', icon: '⚡', level: 85 },
+       // { name: 'Next.js', description: 'Full-stack React framework', icon: '⚡', level: 85 },
         { name: 'Node.js', description: 'JavaScript runtime environment', icon: '🟢', level: 88 },
-        { name: 'TypeScript', description: 'Typed JavaScript superset', icon: '🔷', level: 80 },
+       // { name: 'TypeScript', description: 'Typed JavaScript superset', icon: '🔷', level: 80 },
         { name: 'JavaScript', description: 'Core web programming language', icon: '🟡', level: 95 },
         { name: 'HTML/CSS', description: 'Web markup and styling', icon: '🌐', level: 90 },
         { name: 'Tailwind CSS', description: 'Utility-first CSS framework', icon: '🎨', level: 90 },
-        { name: 'Express', description: 'Web application framework', icon: '🚀', level: 85 },
-        { name: 'MongoDB', description: 'NoSQL database', icon: '🍃', level: 80 },
-        { name: 'PostgreSQL', description: 'Relational database', icon: '🐘', level: 75 }
+        { name: 'Express', description: 'Web application framework', icon: '🚀', level: 75 },
+       // { name: 'MongoDB', description: 'NoSQL database', icon: '🍃', level: 80 },
+       // { name: 'PostgreSQL', description: 'Relational database', icon: '🐘', level: 50 }
       ]
     },
     mobile: {
@@ -41,14 +41,14 @@ const Skills = () => {
       description: 'Building robust desktop applications and software solutions.',
       skills: [
         { name: 'C#', description: 'Modern programming language', icon: '💎', level: 85 },
-        { name: '.NET', description: 'Microsoft development platform', icon: '🔷', level: 80 },
-        { name: 'WPF', description: 'Windows Presentation Foundation', icon: '🪟', level: 75 },
-        { name: 'WinForms', description: 'Windows Forms applications', icon: '📋', level: 80 },
+       // { name: '.NET', description: 'Microsoft development platform', icon: '🔷', level: 80 },
+       // { name: 'WPF', description: 'Windows Presentation Foundation', icon: '🪟', level: 75 },
+       // { name: 'WinForms', description: 'Windows Forms applications', icon: '📋', level: 80 },
         { name: 'Java', description: 'Cross-platform development', icon: '☕', level: 85 },
         { name: 'Python', description: 'Versatile programming language', icon: '🐍', level: 80 },
         { name: 'C++', description: 'System programming language', icon: '⚡', level: 70 },
         { name: 'SQL', description: 'Database management', icon: '🗄️', level: 85 },
-        { name: 'Electron', description: 'Cross-platform desktop apps', icon: '⚛️', level: 75 }
+       // { name: 'Electron', description: 'Cross-platform desktop apps', icon: '⚛️', level: 75 }
       ]
     },
     others: {
@@ -56,12 +56,12 @@ const Skills = () => {
       description: 'Additional technologies and tools for comprehensive development.',
       skills: [
         { name: 'Git', description: 'Version control system', icon: '📚', level: 90 },
-        { name: 'Docker', description: 'Containerization platform', icon: '🐳', level: 75 },
+       // { name: 'Docker', description: 'Containerization platform', icon: '🐳', level: 75 },
         { name: 'AWS', description: 'Cloud computing services', icon: '☁️', level: 70 },
         { name: 'Linux', description: 'Operating system administration', icon: '🐧', level: 80 },
         { name: 'REST APIs', description: 'Web service architecture', icon: '🔌', level: 85 },
-        { name: 'GraphQL', description: 'Modern API query language', icon: '🔍', level: 75 },
-        { name: 'CI/CD', description: 'Continuous integration/deployment', icon: '🔄', level: 80 },
+        //{ name: 'GraphQL', description: 'Modern API query language', icon: '🔍', level: 75 },
+        //{ name: 'CI/CD', description: 'Continuous integration/deployment', icon: '🔄', level: 80 },
         { name: 'UI/UX Design', description: 'User interface design', icon: '🎨', level: 75 },
         { name: 'Agile', description: 'Development methodology', icon: '🎯', level: 85 },
         { name: 'Testing', description: 'Software testing practices', icon: '🧪', level: 80 }
