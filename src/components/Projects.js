@@ -74,7 +74,7 @@ const Projects = () => {
     githubUrl: 'https://github.com/dan-seng/Weather-app',
     featured: false
   },
-  {
+  /*{
     id: 7,
     title: 'REST API Service',
     description: 'A comprehensive REST API built with Express.js and PostgreSQL. Includes authentication and data validation.',
@@ -87,39 +87,6 @@ const Projects = () => {
   },
   {
     id: 8,
-    title: 'Desktop Utility Tool',
-    description: 'A desktop application for system monitoring and optimization. Built with Electron and React.',
-    image: 'https://via.placeholder.com/400x250/8b5cf6/ffffff?text=Desktop+Tool',
-    technologies: ['Electron', 'React', 'Node.js', 'System API'],
-    category: 'computer',
-    liveUrl: '#',
-    githubUrl: '#',
-    featured: true
-  },
-  {
-    id: 9,
-    title: 'File Organizer',
-    description: 'A desktop utility that automatically organizes files into folders by type, date, or custom rules. Built with Electron and Node.js.',
-    image: 'https://via.placeholder.com/400x250/3b82f6/ffffff?text=File+Organizer',
-    technologies: ['Electron', 'Node.js', 'File System API'],
-    category: 'computer',
-    liveUrl: '#',
-    githubUrl: '#',
-    featured: false
-  },
-  {
-    id: 10,
-    title: 'Clipboard Manager',
-    description: 'A simple desktop tool that saves clipboard history and allows users to quickly access and paste previous copies.',
-    image: 'https://via.placeholder.com/400x250/22c55e/ffffff?text=Clipboard+Manager',
-    technologies: ['Electron', 'React', 'SQLite'],
-    category: 'computer',
-    liveUrl: '#',
-    githubUrl: '#',
-    featured: false
-  },
-  {
-    id: 11,
     title: 'Desktop Notes',
     description: 'A sticky notes application for quick reminders with search, categories, and local storage.',
     image: 'https://via.placeholder.com/400x250/f97316/ffffff?text=Desktop+Notes',
@@ -130,18 +97,7 @@ const Projects = () => {
     featured: false
   },
   {
-    id: 12,
-    title: 'Screenshot Tool',
-    description: 'A desktop app for taking, annotating, and saving screenshots with keyboard shortcuts.',
-    image: 'https://via.placeholder.com/400x250/ef4444/ffffff?text=Screenshot+Tool',
-    technologies: ['Electron', 'Node.js', 'Canvas API'],
-    category: 'computer',
-    liveUrl: '#',
-    githubUrl: '#',
-    featured: false
-  },
-  {
-    id: 13,
+    id: 9,
     title: 'System Cleaner',
     description: 'A desktop application to clear cache, temporary files, and improve system performance.',
     image: 'https://via.placeholder.com/400x250/6366f1/ffffff?text=System+Cleaner',
@@ -151,41 +107,9 @@ const Projects = () => {
     githubUrl: '#',
     featured: false
   },
+
   {
-    id: 14,
-    title: 'Fitness Tracker',
-    description: 'A mobile app to track workouts, calories, and daily progress with simple charts.',
-    image: 'https://via.placeholder.com/400x250/16a34a/ffffff?text=Fitness+Tracker',
-    technologies: ['React Native', 'Expo', 'SQLite'],
-    category: 'mobile',
-    liveUrl: '#',
-    githubUrl: '#',
-    featured: false
-  },
-  {
-    id: 15,
-    title: 'Expense Manager',
-    description: 'A mobile app for tracking expenses, setting budgets, and generating monthly reports.',
-    image: 'https://via.placeholder.com/400x250/f59e0b/ffffff?text=Expense+Manager',
-    technologies: ['Flutter', 'Firebase', 'Dart'],
-    category: 'mobile',
-    liveUrl: '#',
-    githubUrl: '#',
-    featured: false
-  },
-  {
-    id: 16,
-    title: 'Recipe Finder',
-    description: 'A recipe discovery app that suggests meals based on ingredients available at home.',
-    image: 'https://via.placeholder.com/400x250/ef4444/ffffff?text=Recipe+Finder',
-    technologies: ['React Native', 'REST API'],
-    category: 'mobile',
-    liveUrl: '#',
-    githubUrl: '#',
-    featured: false
-  },
-  {
-    id: 17,
+    id: 10,
     title: 'Language Learner',
     description: 'A gamified language learning app with flashcards, quizzes, and streak tracking.',
     image: 'https://via.placeholder.com/400x250/3b82f6/ffffff?text=Language+Learner',
@@ -195,41 +119,10 @@ const Projects = () => {
     githubUrl: '#',
     featured: false
   },
+
+ 
   {
-    id: 18,
-    title: 'Mood Journal',
-    description: 'A mobile diary app that helps users track moods, habits, and mental health progress.',
-    image: 'https://via.placeholder.com/400x250/8b5cf6/ffffff?text=Mood+Journal',
-    technologies: ['React Native', 'AsyncStorage'],
-    category: 'mobile',
-    liveUrl: '#',
-    githubUrl: '#',
-    featured: false
-  },
-  {
-    id: 19,
-    title: 'Weather Dashboard',
-    description: 'A web dashboard that shows real-time weather conditions and forecasts using OpenWeather API.',
-    image: 'https://via.placeholder.com/400x250/06b6d4/ffffff?text=Weather+Dashboard',
-    technologies: ['React', 'TailwindCSS', 'OpenWeather API'],
-    category: 'other',
-    liveUrl: '#',
-    githubUrl: '#',
-    featured: false
-  },
-  {
-    id: 20,
-    title: 'Markdown Editor',
-    description: 'A simple online Markdown editor with live preview and export to PDF or HTML.',
-    image: 'https://via.placeholder.com/400x250/10b981/ffffff?text=Markdown+Editor',
-    technologies: ['React', 'TailwindCSS', 'Marked.js'],
-    category: 'other',
-    liveUrl: '#',
-    githubUrl: '#',
-    featured: false
-  },
-  {
-    id: 21,
+    id: 11,
     title: 'Portfolio Generator',
     description: 'A tool that generates a personal portfolio website from a JSON configuration file.',
     image: 'https://via.placeholder.com/400x250/f43f5e/ffffff?text=Portfolio+Generator',
@@ -240,18 +133,7 @@ const Projects = () => {
     featured: false
   },
   {
-    id: 22,
-    title: 'Quiz Game',
-    description: 'A fun web quiz game with multiple-choice questions and a scoreboard.',
-    image: 'https://via.placeholder.com/400x250/eab308/ffffff?text=Quiz+Game',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    category: 'other',
-    liveUrl: '#',
-    githubUrl: '#',
-    featured: false
-  },
-  {
-    id: 23,
+    id: 12,
     title: 'AI Chatbot',
     description: 'A simple chatbot app powered by an AI API for answering user questions in real time.',
     image: 'https://via.placeholder.com/400x250/9333ea/ffffff?text=AI+Chatbot',
@@ -260,7 +142,7 @@ const Projects = () => {
     liveUrl: '#',
     githubUrl: '#',
     featured: false
-  },    
+  },    */
       
   ];
 
