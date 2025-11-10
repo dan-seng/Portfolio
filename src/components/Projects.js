@@ -21,28 +21,19 @@ const Projects = () => {
   },
   {
     id: 2,
-    title: 'Internet Speed Test',
-    description: 'A lightweight web app that measures real-time internet speed, including download and upload rates. Built with HTML, CSS, and JavaScript, it provides a clean interface and responsive design for quick performance checks.',
-    image: '/screenshots/ist.png',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+    title: 'E-Commerce Website',
+    description: 'A comprehensive E-Commerce website built with NextJS and TailwindCSS. Includes Payment integration with stripe.',
+    image: '/screenshots/eshemeta.png',
+    technologies: ['NextJS', 'TailwindCSS', 'Stripe', 'Zustand', 'TypeScript', 'Shadcn UI'],
     category: 'web',
-    liveUrl: 'https://internet-speedtester.vercel.app',
-    githubUrl: 'https://github.com/dan-seng/Internet-Speed-Test',
+    liveUrl: 'https://eshemeta.vercel.app',
+    githubUrl: 'https://github.com/dan-seng/fullstack-nextjs-ecommerce-app',
     featured: true
   },
+  
+  
   {
     id: 3,
-    title: 'Mu-Seng',
-    description: 'A simple class website built for Software Engineering students at Mekelle University. It features photos, student lists, and basic information, designed with HTML, CSS, and JavaScript for a clean and responsive layout.',
-    image: '/screenshots/mu-seng.png',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    category: 'web',
-    liveUrl: 'https://mu-softwareengineers.vercel.app',
-    githubUrl: 'https://github.com/dan-seng/musengclass',
-    featured: true
-  },
-  {
-    id: 4,
     title: 'Portfolio Website',
     description: 'A modern, responsive portfolio website built with React and Framer Motion. Features smooth animations and clean design.',
     image: '/screenshots/portfolio.png',
@@ -50,6 +41,17 @@ const Projects = () => {
     category: 'web',
     liveUrl: 'https://dan-softwares.vercel.app',
     githubUrl: 'https://github.com/dan-seng/Portfolio',
+    featured: false
+  },
+  {
+    id: 4,
+    title: 'Hotel Website',
+    description: 'A hotel website built with React and TailwindCSS.',
+    image: '/screenshots/hotel.png',
+    technologies: ['React', 'TailwindCSS','Shadcn UI'],
+    category: 'web',
+    liveUrl: 'https://luxuryhotl.vercel.app',
+    githubUrl: 'https://github.com/dan-seng/hotel-website',
     featured: false
   },
   {
@@ -65,62 +67,50 @@ const Projects = () => {
   },
   {
     id: 6,
-    title: 'Weather Dashboard',
-    description: 'A weather application that displays current weather and forecasts using OpenWeatherMap API.',
-    image: 'https://via.placeholder.com/400x250/f59e0b/ffffff?text=Weather+App',
-    technologies: ['JavaScript', 'CSS3', 'HTML5', 'API'],
+    title: 'Contact Manager API',
+    description: 'This is the backend API for the MyContacts application, a contact management system with user authentication.',
+    image: '/screenshots/contact-manager.png',
+    technologies: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'JWT', 'bcryptjs', 'dotenv'],
     category: 'web',
-    liveUrl: 'https://dan-weatherapp.vercel.app',
-    githubUrl: 'https://github.com/dan-seng/Weather-app',
-    featured: false
-  },
-  /*{
-    id: 7,
-    title: 'REST API Service',
-    description: 'A comprehensive REST API built with Express.js and PostgreSQL. Includes authentication and data validation.',
-    image: 'https://via.placeholder.com/400x250/ef4444/ffffff?text=API+Service',
-    technologies: ['Node.js', 'Express', 'PostgreSQL', 'JWT'],
-    category: 'computer',
     liveUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/dan-seng/contact-manager/tree/main/mycontacts-backend',
     featured: false
   },
   {
+    id: 7,
+    title: 'Internet Speed Test',
+    description: 'A lightweight web app that measures real-time internet speed, including download and upload rates. Built with HTML, CSS, and JavaScript, it provides a clean interface and responsive design for quick performance checks.',
+    image: '/screenshots/ist.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    category: 'web',
+    liveUrl: 'https://internet-speedtester.vercel.app',
+    githubUrl: 'https://github.com/dan-seng/Internet-Speed-Test',
+    featured: true
+  },
+  {
     id: 8,
-    title: 'Desktop Notes',
-    description: 'A sticky notes application for quick reminders with search, categories, and local storage.',
-    image: 'https://via.placeholder.com/400x250/f97316/ffffff?text=Desktop+Notes',
-    technologies: ['Electron', 'React', 'Local Storage'],
-    category: 'computer',
-    liveUrl: '#',
-    githubUrl: '#',
+    title: 'ChatBot',
+    description: 'A chatbot app that uses Gemini API to answer user questions in real time.',
+    image: "/screenshots/mate.png",
+    technologies: ['JavaScript', 'Gemini API', 'HTML', 'CSS', 'Express'],
+    category: 'web',
+    liveUrl: 'mateai.vercel.app',
+    githubUrl: 'https://github.com/dan-seng/codex-ai',
     featured: false
   },
   {
     id: 9,
-    title: 'System Cleaner',
-    description: 'A desktop application to clear cache, temporary files, and improve system performance.',
-    image: 'https://via.placeholder.com/400x250/6366f1/ffffff?text=System+Cleaner',
-    technologies: ['Electron', 'Node.js', 'System API'],
-    category: 'computer',
-    liveUrl: '#',
-    githubUrl: '#',
-    featured: false
+    title: 'Mu-Seng',
+    description: 'A simple class website built for Software Engineering students at Mekelle University. It features photos, student lists, and basic information, designed with HTML, CSS, and JavaScript for a clean and responsive layout.',
+    image: '/screenshots/mu-seng.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    category: 'web',
+    liveUrl: 'https://mu-softwareengineers.vercel.app',
+    githubUrl: 'https://github.com/dan-seng/musengclass',
+    featured: true
   },
 
-  {
-    id: 10,
-    title: 'Language Learner',
-    description: 'A gamified language learning app with flashcards, quizzes, and streak tracking.',
-    image: 'https://via.placeholder.com/400x250/3b82f6/ffffff?text=Language+Learner',
-    technologies: ['Flutter', 'SQLite', 'Firebase'],
-    category: 'mobile',
-    liveUrl: '#',
-    githubUrl: '#',
-    featured: false
-  },
-
- 
+ /*
   {
     id: 11,
     title: 'Portfolio Generator',
