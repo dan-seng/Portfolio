@@ -1,20 +1,16 @@
 import React, { useState } from 'react';
 import './Skills.css';
 import { 
-  FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaGithub, 
+  FaReact, FaNodeJs, FaJs, FaHtml5,
   FaAws, FaLinux, FaFigma, FaMobileAlt, 
   FaJava, FaPython, FaDatabase, FaServer, FaGitAlt
 } from 'react-icons/fa';
 import { SiExpress, SiTailwindcss, SiKotlin,
-  SiCplusplus, SiCsharp, SiMongodb, SiPostgresql, SiGraphql,
-  SiTypescript, SiNextdotjs, SiDocker, SiTestinglibrary, SiJavascript, SiMicrosoftazure
+  SiCplusplus, SiMongodb, SiPostgresql,
+  SiTypescript, SiNextdotjs, SiTestinglibrary
 } from 'react-icons/si';
 import { DiScrum } from 'react-icons/di';
-import { BsGit } from 'react-icons/bs';
 import { TbBrandReactNative } from 'react-icons/tb';
-import { GiSpiderWeb, GiBrain } from 'react-icons/gi';
-import { MdOutlineDesignServices, MdOutlineMobileFriendly } from 'react-icons/md';
-import { RiComputerLine } from 'react-icons/ri';
 
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState('web');

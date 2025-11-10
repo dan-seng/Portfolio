@@ -108,7 +108,25 @@ const Hero = () => {
               </div>
               <div className="code-line">
                 <span className="line-number">7</span>
-                <span className="code-text"><span className="property">developer</span><span className="punctuation">.</span><span className="property">skills</span> <span className="punctuation">= [</span> <span className="string">'JavaScript'</span><span className="punctuation">, </span><span className="string">'Python'</span><span className="punctuation">, </span><span className="string">'Java'</span><span className="punctuation">, </span><span className="string">'React'</span><span className="punctuation">, </span><span className="string">'Node.js'</span><span className="punctuation">, </span><span className="string">'MongoDB'</span><span className="punctuation">, </span><span className="string">'...'</span> <span className="punctuation">];</span></span>
+                <span className="code-text">
+                   <span className="property">developer</span>
+                   <span className="punctuation">.</span>
+                   <span className="property">skills</span> 
+                   <span className="punctuation">= [</span> 
+                   <span className="string">'JavaScript'</span>
+                   <span className="punctuation">, </span>
+                   <span className="string">'Python'</span>
+                   <span className="punctuation">, </span>
+                   <span className="string">'Java'</span>
+                   <span className="punctuation">, </span>
+                   <span className="string">'React'</span>
+                   <span className="punctuation">, </span>
+                   <span className="string">'Node.js'</span>
+                   <span className="punctuation">, </span>
+                   <span className="string">'MongoDB'</span>
+                   <span className="punctuation">, </span>
+                   <span className="string">'...'</span> 
+                   <span className="punctuation">];</span></span>
               </div>
               <div className="code-line">
                 <span className="line-number">8</span>
@@ -116,7 +134,7 @@ const Hero = () => {
               </div>
               <div className="code-line">
                 <span className="line-number">9</span>
-                <span className="code-text"><span className="comment">// Ready to create something amazing?</span></span>
+                <span className="code-text"><span className="comment">{` //Ready to create something amazing?`}</span></span>
               </div>
             </div>
           </div>

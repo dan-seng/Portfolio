@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Navbar.css';
-import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineDocumentDownload } from 'react-icons/hi';
 
 const Navbar = () => {
@@ -10,8 +10,7 @@ const Navbar = () => {
   React.useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-      
-      // Get all sections
+   
       const sections = ['hero', 'skills', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
       
@@ -54,18 +53,21 @@ const Navbar = () => {
         <div className="nav-right">
           <div className="nav-links">
             <a 
+              href='#skills'
               onClick={() => scrollToSection('skills')} 
               className={`nav-link ${activeSection === 'skills' ? 'active' : ''}`}
             >
               Skills
             </a>
             <a 
+              href='#projects'
               onClick={() => scrollToSection('projects')} 
               className={`nav-link ${activeSection === 'projects' ? 'active' : ''}`}
             >
               Projects
             </a>
             <a 
+              href='#contact'
               onClick={() => scrollToSection('contact')} 
               className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}
             >
