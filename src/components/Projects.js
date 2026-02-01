@@ -50,18 +50,18 @@ const Projects = () => {
     image: '/screenshots/hotel.png',
     technologies: ['React', 'TailwindCSS','Shadcn UI'],
     category: 'web',
-    liveUrl: 'https://luxuryhotl.vercel.app',
+    liveUrl: 'https://spdyhotel.vercel.app',
     githubUrl: 'https://github.com/dan-seng/hotel-website',
     featured: false
   },
   {
     id: 5,
-    title: 'Task Management App',
+    title: 'Substrack',
     description: 'A smart task management application with real-time updates, calendar view, and drag-and-drop functionality.',
-    image: '/screenshots/todo-app.png',
-    technologies: ['React', 'Node.js', 'TailwindCSS', 'JS'],
+    image: '/screenshots/substrack.png',
+    technologies: ['NextJS', 'Express.js', 'TailwindCSS', 'JS', 'MongoDB'],
     category: 'web',
-    liveUrl: 'https://task-wall.vercel.app',
+    liveUrl: 'https://substrackk.vercel.app/',
     githubUrl: 'https://github.com/dan-seng/todo-list-app',
     featured: true
   },
@@ -75,40 +75,7 @@ const Projects = () => {
     liveUrl: '#',
     githubUrl: 'https://github.com/dan-seng/contact-manager/tree/main/mycontacts-backend',
     featured: false
-  },
-  {
-    id: 7,
-    title: 'Internet Speed Test',
-    description: 'A lightweight web app that measures real-time internet speed, including download and upload rates. Built with HTML, CSS, and JavaScript, it provides a clean interface and responsive design for quick performance checks.',
-    image: '/screenshots/ist.png',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    category: 'web',
-    liveUrl: 'https://internet-speedtester.vercel.app',
-    githubUrl: 'https://github.com/dan-seng/Internet-Speed-Test',
-    featured: true
-  },
-  {
-    id: 8,
-    title: 'ChatBot',
-    description: 'A chatbot app that uses Gemini API to answer user questions in real time.',
-    image: "/screenshots/mate.png",
-    technologies: ['JavaScript', 'Gemini API', 'HTML', 'CSS', 'Express'],
-    category: 'web',
-    liveUrl: 'mateai.vercel.app',
-    githubUrl: 'https://github.com/dan-seng/codex-ai',
-    featured: false
-  },
-  {
-    id: 9,
-    title: 'Mu-Seng',
-    description: 'A simple class website built for Software Engineering students at Mekelle University. It features photos, student lists, and basic information, designed with HTML, CSS, and JavaScript for a clean and responsive layout.',
-    image: '/screenshots/mu-seng.png',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    category: 'web',
-    liveUrl: 'https://mu-softwareengineers.vercel.app',
-    githubUrl: 'https://github.com/dan-seng/musengclass',
-    featured: true
-  },
+  }
 
  /*
   {
@@ -273,23 +240,29 @@ const Projects = () => {
           style={{
             display: 'inline-flex',
             alignItems: 'center',
-            gap: '0.5rem',
-            color: '#00ff88',
+            gap: '0.6rem',
+            color: '#000000',
             textDecoration: 'none',
             fontSize: '1.1rem',
-            padding: '0.75rem 1.5rem',
-            border: '2px solid rgba(0, 255, 136, 0.3)',
-            borderRadius: '4px',
-            transition: 'all 0.3s ease',
-            background: 'rgba(0, 255, 136, 0.05)'
+            fontWeight: '500',
+            padding: '0.8rem 2rem',
+            border: 'none',
+            borderRadius: '50px',
+            transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+            background: 'linear-gradient(135deg, #00ff88 0%, #00cc6a 50%, #00aa55 100%)',
+            boxShadow: '0 4px 20px rgba(0, 255, 136, 0.4)',
+            position: 'relative',
+            overflow: 'hidden',
+            zIndex: '1',
+            cursor: 'pointer'
           }}
           onMouseOver={(e) => {
-            e.currentTarget.style.background = 'rgba(0, 255, 136, 0.1)';
-            e.currentTarget.style.boxShadow = '0 0 15px rgba(0, 255, 136, 0.2)';
+            e.currentTarget.style.transform = 'translateY(-3px) scale(1.05)';
+            e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 255, 136, 0.6)';
           }}
           onMouseOut={(e) => {
-            e.currentTarget.style.background = 'rgba(0, 255, 136, 0.05)';
-            e.currentTarget.style.boxShadow = 'none';
+            e.currentTarget.style.transform = 'translateY(0) scale(1)';
+            e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 255, 136, 0.4)';
           }}
         >
           <FaGithub />

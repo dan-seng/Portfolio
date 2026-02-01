@@ -1,16 +1,5 @@
 import React, { useState } from 'react';
 import './Skills.css';
-import { 
-  FaReact, FaNodeJs, FaJs, FaHtml5,
-  FaAws, FaLinux, FaFigma, FaMobileAlt, 
-  FaJava, FaPython, FaDatabase, FaServer, FaGitAlt
-} from 'react-icons/fa';
-import { SiExpress, SiTailwindcss, SiKotlin,
-  SiCplusplus, SiMongodb, SiPostgresql,
-  SiTypescript, SiNextdotjs, SiTestinglibrary
-} from 'react-icons/si';
-import { DiScrum } from 'react-icons/di';
-import { TbBrandReactNative } from 'react-icons/tb';
 
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState('web');
@@ -20,55 +9,49 @@ const Skills = () => {
       name: 'Web Development',
       description: 'Frontend and backend technologies for building modern web applications.',
       skills: [
-        { name: 'React', description: 'Modern frontend framework', icon: <FaReact/>, level: 92 },
-        { name: 'Next.js', description: 'Full-stack React framework', icon: <SiNextdotjs/>, level: 85 },
-        { name: 'Node.js', description: 'JavaScript runtime environment', icon: <FaNodeJs/>, level: 88 },
-        { name: 'TypeScript', description: 'Typed JavaScript superset', icon: <SiTypescript/>, level: 80 },
-        { name: 'JavaScript', description: 'Core web programming language', icon: <FaJs/>, level: 95 },
-        { name: 'HTML/CSS', description: 'Web markup and styling', icon: <FaHtml5/>, level: 90 },
-        { name: 'Tailwind CSS', description: 'Utility-first CSS framework', icon: <SiTailwindcss/>, level: 90 },
-        { name: 'Express', description: 'Web application framework', icon: <SiExpress/>, level: 75 },
-        { name: 'MongoDB', description: 'NoSQL database', icon: <SiMongodb/>, level: 80 },
-        { name: 'PostgreSQL', description: 'Relational database', icon: <SiPostgresql/>, level: 50 }
+        { name: 'React',  image: '/images/skills/react.gif'},
+        { name: 'Next.js',  image: '/images/skills/next-js.gif'},
+        { name: 'Node.js', image: '/images/skills/node.gif'},
+        { name: 'TypeScript', image: '/images/skills/ts.gif'},
+        { name: 'JavaScript',  image: '/images/skills/js.gif'},
+        { name: 'HTML',  image: '/images/skills/html.gif'},
+        { name: 'CSS',  image: '/images/skills/css.webp'},
+        { name: 'Tailwind CSS', image: '/images/skills/tailwind.gif'},
+        { name: 'Express', image: '/images/skills/express.png'},
+        { name: 'MongoDB', image: '/images/skills/mongodb.gif'},
+        { name: 'PostgreSQL', image: '/images/skills/postgres.gif'},
+        { name: 'VueJS',  image: '/images/skills/vuejs.gif'},
+        
       ]
     },
     mobile: {
       name: 'Mobile Development',
       description: 'Skills for building native and cross-platform mobile applications.',
       skills: [
-       // { name: 'Flutter', description: 'Cross-platform mobile app development', icon: <SiFlutter className='flutter-icon'/>, level: 10 },
-       // { name: 'Firebase', description: 'Backend services for mobile apps', icon: <SiFirebase/>, level: 88 },
-        { name: 'React Native', description: 'Cross-platform mobile development', icon: <TbBrandReactNative/>, level: 40 },
-        { name: 'Kotlin', description: 'Modern Android development', icon:<SiKotlin/>, level: 30 },
-        { name: 'Xamarin', description: 'Cross-platform mobile development', icon: <FaMobileAlt/>, level: 10 }
-      ]
+        { name: 'React Native', image: '/images/skills/react.gif'},
+       ]
     },
     desktop: {
       name: 'Desktop Applications',
       description: 'Building robust desktop applications and software solutions.',
       skills: [
-       // { name: 'C#', description: 'Modern programming language', icon:<SiCsharp/>, level: 85 },
-       // { name: '.NET', description: 'Microsoft development platform', icon: '🔷', level: 80 },
-        { name: 'Java', description: 'Cross-platform development', icon:<FaJava/>, level: 85 },
-        { name: 'Python', description: 'Versatile programming language', icon:<FaPython/>, level: 80 },
-        { name: 'C++', description: 'System programming language', icon:<SiCplusplus/>, level: 70 },
-        { name: 'SQL', description: 'Database management', icon:<FaDatabase/>, level: 85 },
+        { name: 'Java', image: '/images/skills/java.gif'},
+        { name: 'Python', image: '/images/skills/python.gif'},
+        { name: 'C++', image: '/images/skills/c++.gif'},
+        { name: 'SQL', image: '/images/skills/sql.gif'},
      ]
     },
     others: {
       name: 'Other Skills',
       description: 'Additional technologies and tools for comprehensive development.',
       skills: [
-        { name: 'Git', description: 'Version control system', icon:<FaGitAlt/>, level: 90 },
-       // { name: 'Docker', description: 'Containerization platform', icon: '🐳', level: 75 },
-        { name: 'AWS', description: 'Cloud computing services', icon:<FaAws/>, level: 70 },
-        { name: 'Linux', description: 'Operating system administration', icon:<FaLinux/>, level: 80 },
-        { name: 'REST APIs', description: 'Web service architecture', icon:<FaServer/>, level: 85 },
-        //{ name: 'GraphQL', description: 'Modern API query language', icon: '🔍', level: 75 },
-        //{ name: 'CI/CD', description: 'Continuous integration/deployment', icon: '🔄', level: 80 },
-        { name: 'UI/UX Design', description: 'User interface design', icon: <FaFigma/>, level: 75 },
-        { name: 'Agile', description: 'Development methodology', icon: <DiScrum/>, level: 85 },
-        { name: 'Testing', description: 'Software testing practices', icon: <SiTestinglibrary/>, level: 80 }
+        { name: 'Git', image: '/images/skills/git.gif'},
+        { name: 'AWS', image: '/images/skills/aws.gif'},
+        { name: 'Linux', image: '/images/skills/linux.gif'},
+        { name: 'VS Code', image: '/images/skills/vscoode.png'},
+        { name: 'Figma', image: '/images/skills/figma.gif'},
+        { name: 'Github', image: '/images/skills/github.gif'},
+        { name: 'SQL', image: '/images/skills/sql.gif'}
       ]
     }
   };
@@ -76,14 +59,20 @@ const Skills = () => {
   const SkillCard = ({ skill }) => (
     <div className="skill-card">
       <div className="skill-content">
-        <div className="skill-icon">{skill.icon}</div>
+        <div className="skill-icon">
+          <img 
+            src={skill.image} 
+            alt={skill.name} 
+            className="skill-image"
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = '/images/skills/default.png';
+            }}
+          />
+        </div>
         <div className="skill-info">
           <h4 className="skill-title">{skill.name}</h4>
-          <p className="skill-description">{skill.description}</p>
         </div>
-      </div>
-      <div className="skill-progress-bar">
-        <div className="skill-progress" style={{ width: `${skill.level}%` }}></div>
       </div>
     </div>
   );
@@ -126,11 +115,7 @@ const Skills = () => {
         </div>
 
         <div className="skills-content">
-          <div className="category-info">
-            <h3 className="category-title">{skillCategories[activeCategory].name}</h3>
-            <p className="category-description">{skillCategories[activeCategory].description}</p>
-          </div>
-          
+         
           <div className="skills-grid">
             {skillCategories[activeCategory].skills.map((skill, index) => (
               <SkillCard key={index} skill={skill} />
@@ -143,4 +128,3 @@ const Skills = () => {
 };
 
 export default Skills;
-

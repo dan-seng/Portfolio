@@ -8,7 +8,7 @@ A modern, responsive portfolio website built with React and Framer Motion, showc
 
 ## 🚀 Live Demo
 
-Check out the live version: [dan-softwares.vercel.app](https://dan-softwares.vercel.app)
+Check out the live version: [daniel-gidey.vercel.app](https://daniel-gidey.vercel.app)
 
 ## ✨ Features
 
