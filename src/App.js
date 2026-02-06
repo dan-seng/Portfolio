@@ -48,7 +48,7 @@ function App() {
             <Projects id="projects" />
           </ScrollAnimation>
           
-          <ScrollAnimation type="fadeLeft" delay={0.2} duration={0.8} threshold={0.1}>
+          <ScrollAnimation type="fadeUp" delay={0.2} duration={0.8} threshold={0.1}>
             <Contact id="contact" />
           </ScrollAnimation>
           
@@ -57,7 +57,9 @@ function App() {
           </ScrollAnimation>
         </main>
       </AnimatePresence>
-      <Footer />
+      <ScrollAnimation type="fadeUp" delay={0.1} duration={0.8} threshold={0.1}>
+        <Footer />
+      </ScrollAnimation>
     </div>
   );
 }
