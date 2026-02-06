@@ -1,0 +1,105 @@
+.loading-screen {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  gap: 18px;
+  text-align: center;
+  background:
+    radial-gradient(1200px 600px at 20% 20%, rgba(0, 255, 136, 0.12), transparent 60%),
+    radial-gradient(900px 500px at 80% 10%, rgba(0, 170, 255, 0.10), transparent 55%),
+    radial-gradient(700px 700px at 50% 80%, rgba(255, 80, 120, 0.08), transparent 60%),
+    #0a0a0a;
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-screen::before {
+  content: '';
+  position: absolute;
+  inset: -50%;
+  background:
+    linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.03) 45%, transparent 60%);
+  animation: loading-sweep 2.8s linear infinite;
+}
+
+.loading-screen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(300px 300px at 50% 50%, rgba(0, 255, 136, 0.12), transparent 70%);
+  filter: blur(40px);
+  opacity: 0.7;
+  animation: loading-glow 2.4s ease-in-out infinite;
+}
+
+.loading-spinner {
+  width: clamp(70px, 12vw, 96px);
+  height: clamp(70px, 12vw, 96px);
+  border-radius: 50%;
+  background:
+    conic-gradient(from 0deg, #00ff88 0deg, rgba(0, 255, 136, 0.2) 130deg, rgba(0, 255, 136, 0.08) 260deg, #00ff88 360deg);
+  mask: radial-gradient(circle, transparent 55%, #000 56%);
+  -webkit-mask: radial-gradient(circle, transparent 55%, #000 56%);
+  position: relative;
+  animation: loading-spin 1.2s linear infinite;
+  z-index: 1;
+  box-shadow: 0 0 24px rgba(0, 255, 136, 0.35);
+}
+
+.loading-spinner::after {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.1) 55%, transparent 70%);
+  filter: blur(6px);
+  animation: loading-core 1.6s ease-in-out infinite;
+}
+
+.loading-screen p {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-size: clamp(0.95rem, 2.4vw, 1.2rem);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+
+@keyframes loading-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-sweep {
+  0% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(30%);
+  }
+}
+
+@keyframes loading-glow {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.95;
+  }
+}
+
+@keyframes loading-core {
+  0%,
+  100% {
+    transform: scale(0.92);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
